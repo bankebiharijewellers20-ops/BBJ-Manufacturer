@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Banke Bihari Jewellers | Gold Sheet Jewellery Manufacturer</title>
+
+<meta name="description" content="Banke Bihari Jewellers - Gold Sheet Jewellery manufacturer and wholesaler. Bangle, Chain, Earring, Necklaces, Gents Kada, Ladies Bracelet and Gents Bracelet.">
+<meta name="keywords" content="Gold Sheet, Gold Sheet Bangle, Gold Sheet Chain, Gold Sheet Earring, Gold Sheet Necklaces, Gents Kada, Ladies Bracelet, Gents Bracelet, jewellery manufacturer, jewellery wholesaler">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#070707;
+    color:white;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(5,5,5,.97);
+    border-bottom:1px solid #b99735;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo small{
+    display:block;
+    color:white;
+    font-size:9px;
+    letter-spacing:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:
+    radial-gradient(circle,#3b3012 0%,#111 35%,#050505 75%);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:22px;
+}
+
+h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1;
+    margin-bottom:22px;
+}
+
+.gold{
+    color:#d4af37;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    margin:5px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.gold-btn{
+    background:#d4af37;
+    color:#050505;
+}
+
+.gold-btn:hover{
+    background:#f0d35e;
+}
+
+.outline-btn{
+    border:1px solid #d4af37;
+    color:#d4af37;
+}
+
+.outline-btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+section{
+    padding:75px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title h2{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.title p{
+    color:#aaa;
+}
+
+.about{
+    background:#0d0d0d;
+}
+
+.about-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    background:#121212;
+    padding:35px;
+    border:1px solid #55471d;
+    border-radius:10px;
+}
+
+.about-box h3{
+    color:#d4af37;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:#ccc;
+}
+
+.products{
+    background:#070707;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.product{
+    background:#111;
+    border:1px solid #443a1b;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+    border-color:#d4af37;
+}
+
+.product-image{
+    width:100%;
+    height:280px;
+    background:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#777;
+    text-align:center;
+    padding:20px;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+    text-align:center;
+}
+
+.product-info h3{
+    font-size:21px;
+    margin-bottom:12px;
+}
+
+.whatsapp{
+    display:block;
+    background:#d4af37;
+    color:#050505;
+    text-decoration:none;
+    padding:11px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.whatsapp:hover{
+    background:#f0d35e;
+}
+
+.contact{
+    background:#0d0d0d;
+}
+
+.contact-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    padding:45px 25px;
+    background:#111;
+    border:1px solid #55471d;
+    border-radius:12px;
+}
+
+.contact-box h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:#bbb;
+}
+
+.contact-details{
+    margin:25px 0;
+}
+
+.contact-details a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:12px;
+}
+
+.contact-details a:hover{
+    color:#d4af37;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#050505;
+    border-top:1px solid #332c18;
+}
+
+footer p{
+    color:#888;
+    font-size:13px;
+    margin:4px;
+}
+
+@media(max-width:800px){
+
+    nav{
+        display:none;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:520px){
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:75vh;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+
+<div class="logo">
+BBJ
+<small>BANKE BIHARI JEWELLERS</small>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Gold Sheet</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">B2B • MANUFACTURER • WHOLESALER</div>
+
+<h1>
+BANKE BIHARI<br>
+<span class="gold">JEWELLERS</span>
+</h1>
+
+<p>
+Gold Sheet Jewellery Manufacturer & Wholesaler
+<br>
+Premium Designs for B2B Jewellery Buyers
+</p>
+
+<a class="btn gold-btn" href="#products">
+VIEW GOLD SHEET COLLECTION
+</a>
+
+<a class="btn outline-btn" href="#contact">
+CONTACT US
+</a>
+
+</div>
+
+</section>
+
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="title">
+<h2>ABOUT <span class="gold">BBJ</span></h2>
+<p>Quality • Design • Wholesale</p>
+</div>
+
+<div class="about-box">
+
+<h3>Banke Bihari Jewellers</h3>
+
+<p>
+Banke Bihari Jewellers is a Gold Sheet Jewellery
+manufacturer and wholesaler focused on B2B jewellery
+buyers and wholesale jewellers.
+</p>
+
+<br>
+
+<p>
+Explore our Gold Sheet collection and contact us directly
+on WhatsApp for product details and wholesale enquiries.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="title">
+
+<h2>GOLD <span class="gold">SHEET</span></h2>
+
+<p>
+Select a product and enquire directly on WhatsApp
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<!-- 1 BANGLE -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/bangle.jpg"
+alt="Gold Sheet Bangle"
+onerror="this.style.display='none';this.parentElement.innerHTML='BANGLE PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Bangle</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Bangle.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- 2 CHAIN -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/chain.jpg"
+alt="Gold Sheet Chain"
+onerror="this.style.display='none';this.parentElement.innerHTML='CHAIN PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Chain</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Chain.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- 3 EARRING -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/earring.jpg"
+alt="Gold Sheet Earring"
+onerror="this.style.display='none';this.parentElement.innerHTML='EARRING PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Earring</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Earring.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- 4 NECKLACES -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/necklaces.jpg"
+alt="Gold Sheet Necklaces"
+onerror="this.style.display='none';this.parentElement.innerHTML='NECKLACES PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Necklaces</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Necklaces.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- 5 GENTS KADA -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/gents-kada.jpg"
+alt="Gold Sheet Gents Kada"
+onerror="this.style.display='none';this.parentElement.innerHTML='GENTS KADA PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Gents Kada</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Gents%20Kada.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- 6 LADIES BRACELET -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/ladies-bracelet.jpg"
+alt="Gold Sheet Ladies Bracelet"
+onerror="this.style.display='none';this.parentElement.innerHTML='LADIES BRACELET PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Ladies Bracelet</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Ladies%20Bracelet.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- 7 GENTS BRACELET -->
+<div class="product">
+
+<div class="product-image">
+<img src="images/gents-bracelet.jpg"
+alt="Gold Sheet Gents Bracelet"
+onerror="this.style.display='none';this.parentElement.innerHTML='GENTS BRACELET PHOTO';">
+</div>
+
+<div class="product-info">
+
+<h3>Gents Bracelet</h3>
+
+<a class="whatsapp"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20am%20interested%20in%20Gold%20Sheet%20Gents%20Bracelet.%20Please%20share%20details%20and%20wholesale%20price."
+target="_blank">
+📲 Enquire on WhatsApp
+</a>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>
+LET'S <span class="gold">CONNECT</span>
+</h2>
+
+<p>
+For wholesale enquiries, product details and B2B orders,
+contact Banke Bihari Jewellers.
+</p>
+
+<div class="contact-details">
+
+<a href="tel:+919090195349">
+📞 +91 9090195349
+</a>
+
+<a href="mailto:bankebiharijewellers20@gmail.com">
+✉️ bankebiharijewellers20@gmail.com
+</a>
+
+</div>
+
+<a class="btn gold-btn"
+href="https://wa.me/919090195349?text=Hello%20Banke%20Bihari%20Jewellers%2C%20I%20want%20to%20make%20a%20wholesale%20enquiry."
+target="_blank">
+📲 WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 1999 <span class="gold">Banke Bihari Jewellers</span>
+</p>
+
+<p>
+Gold Sheet Jewellery Manufacturer & Wholesaler
+</p>
+
+</footer>
+
+</body>
+</html>
